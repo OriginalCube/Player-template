@@ -63,3 +63,10 @@ body {
 .lower-volume {
     transform: rotate(180deg);
 }
+
+@media (max-width: 1366px) {
+    .playlist {
+        margin-top: 12px;
+        gap: 4px;
+    }
+}
