@@ -54,6 +54,7 @@ async function loadSong(next = true, changeSong) {
         const currentSong = data[index];
 
         // Update visual elements
+        foreground = currentSong.foreground
         updateImage(currentSong);
         updateBackground(currentSong);
         updateName(currentSong);
@@ -192,4 +193,4 @@ function wallpaperAudioListener(audioArray) {
 
 
 // Register the audio listener provided by Wallpaper Engine.
-// window.wallpaperRegisterAudioListener(wallpaperAudioListener)
+window.wallpaperRegisterAudioListener(wallpaperAudioListener)
